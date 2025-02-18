@@ -19,8 +19,8 @@ export class AdherentsController {
   constructor(private readonly adherentsService: AdherentsService) {}
 
   @Get()
-  findAll(@Query('role') role?: 'INTERNAL' | 'EXTERNAL') {
-    return this.adherentsService.findAll(role);
+  findAll() {
+    return this.adherentsService.findAll();
   }
 
   @Get(':id')
@@ -31,9 +31,9 @@ export class AdherentsController {
   @Post()
   create(
     @Body(ValidationPipe)
-    adherent: CreateAdherentDto,
+    createAdherentDto: CreateAdherentDto,
   ) {
-    return this.adherentsService.create(adherent);
+    return this.adherentsService.create(createAdherentDto);
   }
 
   @Patch(':id')
