@@ -5,8 +5,10 @@ import {
   IsOptional,
   IsDateString,
   IsEnum,
+  IsNotEmpty,
 } from 'class-validator';
 import { Type } from 'class-transformer';
+import { ObjectId } from 'mongodb';
 export enum ObjectifStatus {
   EN_COURS = 'En cours',
   ATTEINT = 'Atteint',
@@ -34,7 +36,7 @@ class ObjectifDto {
 
 export class CreateAdherentDto {
   @IsString()
-  _id: string;
+  _id?: string;
 
   @IsString()
   nom: string;
@@ -59,6 +61,7 @@ export class CreateAdherentDto {
   taille: number;
 
   @IsString()
+  @IsNotEmpty()
   coach_id: string;
 
   @IsArray()
