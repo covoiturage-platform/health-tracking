@@ -47,7 +47,7 @@ export class AdherentsController {
     @Body()
     adherentUpdate: UpdateAdherentDto,
   ) {
-    return this.adherentsService.update(id, adherentUpdate);
+    return this.adherentsService.updateAdherent(id, adherentUpdate);
   }
 
   @Delete(':id')
