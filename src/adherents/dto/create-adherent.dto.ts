@@ -16,6 +16,7 @@ export enum ObjectifStatus {
 }
 class ObjectifDto {
   @IsString()
+  @IsOptional()
   _id: string;
 
   @IsString()
@@ -36,20 +37,24 @@ class ObjectifDto {
 
 export class CreateAdherentDto {
   @IsString()
-  _id?: string;
+  @IsOptional()
+
+  id: string | ObjectId;
 
   @IsString()
   nom: string;
 
   @IsString()
+  @IsOptional()
   email: string;
 
   @IsString()
+  @IsOptional()
   telephone: string;
 
   @IsDateString()
   @IsOptional()
-  date_inscription: string = new Date().toISOString();
+  date_inscription: string 
 
   @IsNumber()
   age: number;
@@ -65,6 +70,7 @@ export class CreateAdherentDto {
   coach_id: string;
 
   @IsArray()
+  @IsOptional()
   @Type(() => ObjectifDto)
   objectifs: ObjectifDto[];
 }
