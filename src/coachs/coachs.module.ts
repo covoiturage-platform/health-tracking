@@ -7,5 +7,6 @@ import { MongodbModule } from 'src/mongodb/mongodb.module';
   imports: [MongodbModule],
   controllers: [CoachsController],
   providers: [CoachsService],
+  exports: [CoachsService]
 })
 export class CoachsModule {}
