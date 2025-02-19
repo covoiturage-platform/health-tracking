@@ -31,7 +31,7 @@ export class CoachsService {
       query = { _id: id };
     }
 
-    const coach = await this.coachs.findOne(query);
+    const coach = await this.db.collection('coachs').findOne(query);
     if (!coach) {
       throw new NotFoundException(`Coach #${id} not found`);
     }
