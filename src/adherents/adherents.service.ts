@@ -79,13 +79,23 @@ export class AdherentsService {
     return result;
   }
 
-  async update(id: string, adherentUpdate: UpdateAdherentDto) {
+  async updateAdherent(id: string, adherentUpdate: UpdateAdherentDto) {
     let query;
     try {
       query = { _id: new ObjectId(id) };
     } catch {
       query = { _id: id };
     }
+
+    if (adherentUpdate.coach_id) {
+    try {
+      await this.coachsService.findOneCoach(adherentUpdate.coach_id);
+      
+    } catch (error) {
+      throw new BadRequestException(
+        `Invalid coach_id: ${adherentUpdate.coach_id}`,
+      );
+    }}
     const result = await this.db.collection('adherents').updateOne(query, {
       $set: adherentUpdate,
     });
