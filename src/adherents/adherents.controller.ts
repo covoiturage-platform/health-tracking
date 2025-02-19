@@ -19,26 +19,26 @@ export class AdherentsController {
   constructor(private readonly adherentsService: AdherentsService) {}
 
   @Get()
-  findAll() {
+  findAllAdherents() {
     return this.adherentsService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id',ParseIntPipe) id: number) {
+  findOneAdherent(@Param('id') id: string) {
     return this.adherentsService.findOne(id);
   }
 
   @Post()
-  create(
+  createAdherent(
     @Body(ValidationPipe)
     createAdherentDto: CreateAdherentDto,
   ) {
-    return this.adherentsService.create(createAdherentDto);
+    return this.adherentsService.createAdherent(createAdherentDto);
   }
 
   @Patch(':id')
-  update(
-    @Param('id',ParseIntPipe) id: number,
+  updateAdherent(
+    @Param('id', ParseIntPipe) id: string,
     @Body(ValidationPipe)
     adherentUpdate: UpdateAdherentDto,
   ) {
@@ -46,7 +46,7 @@ export class AdherentsController {
   }
 
   @Delete(':id')
-  remove(@Param('id',ParseIntPipe) id: number) {
-    return this.adherentsService.remove(id);
+  removeAdherent(@Param('id', ParseIntPipe) id: string) {
+    return this.adherentsService.removeAdherent(id);
   }
 }
