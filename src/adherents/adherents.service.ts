@@ -61,11 +61,11 @@ export class AdherentsService {
 
   // 🔹 Récupérer les adhérents d’un coach (Ajouté)
   async findByCoach(coachId: string) {
-    return this.adherents.find({ coachId: coachId }).toArray();
+    return this.adherents.find({ coach_id: coachId }).toArray();
   }
 
   // 🔹 Supprimer tous les adhérents d’un coach (Ajouté)
   async deleteByCoach(coachId: string) {
-    return this.adherents.deleteMany({ coachId: coachId });
+    return this.adherents.deleteMany({ coach_id: coachId });
   }
 }
