@@ -86,6 +86,6 @@ export class PlansNutritionController {
     @Param('startDate') startDate: string,
     @Param('endDate') endDate: string,
   ) {
-    return this.plansNutritionService.findByDateRange(new Date(startDate), new Date(endDate));
+    return this.plansNutritionService.findByDateRange(startDate, endDate);
   }
 }

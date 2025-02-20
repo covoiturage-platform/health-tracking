@@ -68,7 +68,7 @@ export class PlansNutritionService {
   }
 
   // 🔹 Filtrer les plans nutritionnels par date de création
-  async findByDateRange(startDate: Date, endDate: Date): Promise<PlanNutrition[]> {
+  async findByDateRange(startDate: string, endDate: string): Promise<PlanNutrition[]> {
     return this.plansNutrition
       .find({ dateCreation: { $gte: startDate, $lte: endDate } })
       .toArray();
