@@ -1,0 +1,1802 @@
+[
+    {
+        "_id": "1",
+        "utilisateur_id": "295",
+        "type": "Marche",
+        "duree": 94,
+        "distance": 14.0,
+        "calories_brulees": 881,
+        "date": "2024-11-24T05:53:22.998993"
+    },
+    {
+        "_id": "2",
+        "utilisateur_id": "32",
+        "type": "Cyclisme",
+        "duree": 84,
+        "distance": 15.1,
+        "calories_brulees": 475,
+        "date": "2024-12-30T10:09:30.225924"
+    },
+    {
+        "_id": "3",
+        "utilisateur_id": "391",
+        "type": "Cyclisme",
+        "duree": 43,
+        "distance": 18.8,
+        "calories_brulees": 352,
+        "date": "2024-02-09T01:47:19.039878"
+    },
+    {
+        "_id": "4",
+        "utilisateur_id": "181",
+        "type": "Cyclisme",
+        "duree": 34,
+        "distance": 6.5,
+        "calories_brulees": 769,
+        "date": "2024-07-03T15:48:27.758625"
+    },
+    {
+        "_id": "5",
+        "utilisateur_id": "127",
+        "type": "Marche",
+        "duree": 78,
+        "distance": 4.8,
+        "calories_brulees": 263,
+        "date": "2024-04-24T12:28:06.434057"
+    },
+    {
+        "_id": "6",
+        "utilisateur_id": "455",
+        "type": "Course",
+        "duree": 15,
+        "distance": 1.7,
+        "calories_brulees": 604,
+        "date": "2024-10-11T22:38:27.724307"
+    },
+    {
+        "_id": "7",
+        "utilisateur_id": "40",
+        "type": "Natation",
+        "duree": 46,
+        "distance": 14.4,
+        "calories_brulees": 965,
+        "date": "2024-12-17T09:13:18.692759"
+    },
+    {
+        "_id": "8",
+        "utilisateur_id": "30",
+        "type": "Natation",
+        "duree": 96,
+        "distance": 12.8,
+        "calories_brulees": 279,
+        "date": "2024-01-12T06:58:11.809257"
+    },
+    {
+        "_id": "9",
+        "utilisateur_id": "337",
+        "type": "Natation",
+        "duree": 114,
+        "distance": 18.9,
+        "calories_brulees": 808,
+        "date": "2024-02-05T15:40:22.955029"
+    },
+    {
+        "_id": "10",
+        "utilisateur_id": "233",
+        "type": "Natation",
+        "duree": 101,
+        "distance": 18.8,
+        "calories_brulees": 140,
+        "date": "2024-05-27T02:26:28.240108"
+    },
+    {
+        "_id": "11",
+        "utilisateur_id": "199",
+        "type": "Natation",
+        "duree": 112,
+        "distance": 1.5,
+        "calories_brulees": 198,
+        "date": "2024-04-20T01:42:54.683028"
+    },
+    {
+        "_id": "12",
+        "utilisateur_id": "414",
+        "type": "Cyclisme",
+        "duree": 120,
+        "distance": 11.4,
+        "calories_brulees": 443,
+        "date": "2024-10-12T04:39:29.826776"
+    },
+    {
+        "_id": "13",
+        "utilisateur_id": "200",
+        "type": "Cyclisme",
+        "duree": 33,
+        "distance": 15.6,
+        "calories_brulees": 507,
+        "date": "2024-09-16T03:59:12.330946"
+    },
+    {
+        "_id": "14",
+        "utilisateur_id": "369",
+        "type": "Course",
+        "duree": 45,
+        "distance": 11.6,
+        "calories_brulees": 679,
+        "date": "2024-12-10T00:40:59.855766"
+    },
+    {
+        "_id": "15",
+        "utilisateur_id": "37",
+        "type": "Cyclisme",
+        "duree": 55,
+        "distance": 1.4,
+        "calories_brulees": 200,
+        "date": "2024-06-23T23:07:28.619588"
+    },
+    {
+        "_id": "16",
+        "utilisateur_id": "451",
+        "type": "Natation",
+        "duree": 69,
+        "distance": 16.1,
+        "calories_brulees": 711,
+        "date": "2024-03-14T07:15:07.098391"
+    },
+    {
+        "_id": "17",
+        "utilisateur_id": "103",
+        "type": "Cyclisme",
+        "duree": 116,
+        "distance": 18.7,
+        "calories_brulees": 924,
+        "date": "2024-01-20T02:31:39.322536"
+    },
+    {
+        "_id": "18",
+        "utilisateur_id": "331",
+        "type": "Course",
+        "duree": 61,
+        "distance": 18.1,
+        "calories_brulees": 623,
+        "date": "2024-08-25T11:42:15.435723"
+    },
+    {
+        "_id": "19",
+        "utilisateur_id": "469",
+        "type": "Course",
+        "duree": 108,
+        "distance": 9.1,
+        "calories_brulees": 100,
+        "date": "2024-09-13T10:47:07.357478"
+    },
+    {
+        "_id": "20",
+        "utilisateur_id": "28",
+        "type": "Cyclisme",
+        "duree": 116,
+        "distance": 17.3,
+        "calories_brulees": 381,
+        "date": "2024-04-27T12:53:11.278185"
+    },
+    {
+        "_id": "21",
+        "utilisateur_id": "87",
+        "type": "Natation",
+        "duree": 34,
+        "distance": 14.5,
+        "calories_brulees": 189,
+        "date": "2024-04-23T07:12:09.255180"
+    },
+    {
+        "_id": "22",
+        "utilisateur_id": "242",
+        "type": "Course",
+        "duree": 86,
+        "distance": 13.0,
+        "calories_brulees": 369,
+        "date": "2024-02-26T00:44:55.359714"
+    },
+    {
+        "_id": "23",
+        "utilisateur_id": "17",
+        "type": "Cyclisme",
+        "duree": 95,
+        "distance": 5.9,
+        "calories_brulees": 879,
+        "date": "2024-02-10T20:33:40.729414"
+    },
+    {
+        "_id": "24",
+        "utilisateur_id": "279",
+        "type": "Marche",
+        "duree": 111,
+        "distance": 2.7,
+        "calories_brulees": 952,
+        "date": "2024-11-06T04:16:03.126794"
+    },
+    {
+        "_id": "25",
+        "utilisateur_id": "439",
+        "type": "Marche",
+        "duree": 79,
+        "distance": 16.2,
+        "calories_brulees": 844,
+        "date": "2024-02-06T07:03:42.902515"
+    },
+    {
+        "_id": "26",
+        "utilisateur_id": "225",
+        "type": "Marche",
+        "duree": 58,
+        "distance": 6.7,
+        "calories_brulees": 528,
+        "date": "2024-07-24T11:36:09.265312"
+    },
+    {
+        "_id": "27",
+        "utilisateur_id": "97",
+        "type": "Natation",
+        "duree": 64,
+        "distance": 1.9,
+        "calories_brulees": 438,
+        "date": "2024-02-14T20:25:50.374816"
+    },
+    {
+        "_id": "28",
+        "utilisateur_id": "101",
+        "type": "Marche",
+        "duree": 113,
+        "distance": 17.5,
+        "calories_brulees": 749,
+        "date": "2024-08-16T08:02:31.273766"
+    },
+    {
+        "_id": "29",
+        "utilisateur_id": "353",
+        "type": "Natation",
+        "duree": 108,
+        "distance": 17.8,
+        "calories_brulees": 788,
+        "date": "2024-10-23T09:51:58.520852"
+    },
+    {
+        "_id": "30",
+        "utilisateur_id": "207",
+        "type": "Natation",
+        "duree": 54,
+        "distance": 3.5,
+        "calories_brulees": 387,
+        "date": "2024-05-18T15:04:46.990376"
+    },
+    {
+        "_id": "31",
+        "utilisateur_id": "206",
+        "type": "Natation",
+        "duree": 79,
+        "distance": 11.8,
+        "calories_brulees": 719,
+        "date": "2024-05-20T15:47:34.982541"
+    },
+    {
+        "_id": "32",
+        "utilisateur_id": "231",
+        "type": "Course",
+        "duree": 18,
+        "distance": 6.5,
+        "calories_brulees": 271,
+        "date": "2024-07-19T21:51:38.041887"
+    },
+    {
+        "_id": "33",
+        "utilisateur_id": "81",
+        "type": "Cyclisme",
+        "duree": 86,
+        "distance": 4.9,
+        "calories_brulees": 552,
+        "date": "2024-10-18T15:24:52.046217"
+    },
+    {
+        "_id": "34",
+        "utilisateur_id": "105",
+        "type": "Natation",
+        "duree": 70,
+        "distance": 3.4,
+        "calories_brulees": 468,
+        "date": "2024-10-28T14:53:56.238758"
+    },
+    {
+        "_id": "35",
+        "utilisateur_id": "338",
+        "type": "Cyclisme",
+        "duree": 39,
+        "distance": 2.9,
+        "calories_brulees": 930,
+        "date": "2024-05-03T22:39:56.430722"
+    },
+    {
+        "_id": "36",
+        "utilisateur_id": "416",
+        "type": "Cyclisme",
+        "duree": 39,
+        "distance": 6.2,
+        "calories_brulees": 532,
+        "date": "2024-06-15T20:38:11.393426"
+    },
+    {
+        "_id": "37",
+        "utilisateur_id": "355",
+        "type": "Cyclisme",
+        "duree": 77,
+        "distance": 10.5,
+        "calories_brulees": 944,
+        "date": "2024-08-08T12:50:37.187207"
+    },
+    {
+        "_id": "38",
+        "utilisateur_id": "263",
+        "type": "Course",
+        "duree": 56,
+        "distance": 3.4,
+        "calories_brulees": 523,
+        "date": "2024-10-12T02:01:14.519855"
+    },
+    {
+        "_id": "39",
+        "utilisateur_id": "475",
+        "type": "Cyclisme",
+        "duree": 76,
+        "distance": 6.9,
+        "calories_brulees": 544,
+        "date": "2024-05-21T16:37:07.545752"
+    },
+    {
+        "_id": "40",
+        "utilisateur_id": "175",
+        "type": "Natation",
+        "duree": 61,
+        "distance": 6.3,
+        "calories_brulees": 502,
+        "date": "2024-06-17T07:08:44.566591"
+    },
+    {
+        "_id": "41",
+        "utilisateur_id": "475",
+        "type": "Marche",
+        "duree": 99,
+        "distance": 15.7,
+        "calories_brulees": 991,
+        "date": "2024-05-27T16:22:07.494891"
+    },
+    {
+        "_id": "42",
+        "utilisateur_id": "41",
+        "type": "Marche",
+        "duree": 29,
+        "distance": 12.7,
+        "calories_brulees": 352,
+        "date": "2024-08-05T18:43:00.725281"
+    },
+    {
+        "_id": "43",
+        "utilisateur_id": "292",
+        "type": "Course",
+        "duree": 85,
+        "distance": 19.7,
+        "calories_brulees": 497,
+        "date": "2024-04-10T02:00:02.529678"
+    },
+    {
+        "_id": "44",
+        "utilisateur_id": "314",
+        "type": "Cyclisme",
+        "duree": 60,
+        "distance": 11.6,
+        "calories_brulees": 262,
+        "date": "2024-07-11T08:30:49.863867"
+    },
+    {
+        "_id": "45",
+        "utilisateur_id": "295",
+        "type": "Natation",
+        "duree": 49,
+        "distance": 12.9,
+        "calories_brulees": 253,
+        "date": "2024-12-31T02:53:51.517788"
+    },
+    {
+        "_id": "46",
+        "utilisateur_id": "384",
+        "type": "Marche",
+        "duree": 53,
+        "distance": 10.7,
+        "calories_brulees": 623,
+        "date": "2024-12-08T21:22:23.167133"
+    },
+    {
+        "_id": "47",
+        "utilisateur_id": "80",
+        "type": "Marche",
+        "duree": 80,
+        "distance": 19.9,
+        "calories_brulees": 616,
+        "date": "2024-08-29T21:03:52.041427"
+    },
+    {
+        "_id": "48",
+        "utilisateur_id": "337",
+        "type": "Cyclisme",
+        "duree": 42,
+        "distance": 1.9,
+        "calories_brulees": 182,
+        "date": "2024-09-21T19:04:08.737156"
+    },
+    {
+        "_id": "49",
+        "utilisateur_id": "337",
+        "type": "Cyclisme",
+        "duree": 80,
+        "distance": 5.7,
+        "calories_brulees": 404,
+        "date": "2024-06-08T21:33:39.920644"
+    },
+    {
+        "_id": "50",
+        "utilisateur_id": "464",
+        "type": "Cyclisme",
+        "duree": 17,
+        "distance": 3.7,
+        "calories_brulees": 267,
+        "date": "2024-04-30T19:19:24.447891"
+    },
+    {
+        "_id": "51",
+        "utilisateur_id": "45",
+        "type": "Marche",
+        "duree": 95,
+        "distance": 17.0,
+        "calories_brulees": 124,
+        "date": "2024-01-25T04:51:11.121196"
+    },
+    {
+        "_id": "52",
+        "utilisateur_id": "486",
+        "type": "Natation",
+        "duree": 75,
+        "distance": 12.7,
+        "calories_brulees": 477,
+        "date": "2024-01-27T17:04:22.733033"
+    },
+    {
+        "_id": "53",
+        "utilisateur_id": "184",
+        "type": "Course",
+        "duree": 93,
+        "distance": 14.4,
+        "calories_brulees": 804,
+        "date": "2024-12-23T01:35:50.069597"
+    },
+    {
+        "_id": "54",
+        "utilisateur_id": "246",
+        "type": "Cyclisme",
+        "duree": 47,
+        "distance": 4.3,
+        "calories_brulees": 154,
+        "date": "2024-10-26T03:40:16.715998"
+    },
+    {
+        "_id": "55",
+        "utilisateur_id": "211",
+        "type": "Course",
+        "duree": 61,
+        "distance": 17.1,
+        "calories_brulees": 952,
+        "date": "2024-04-27T17:52:06.400084"
+    },
+    {
+        "_id": "56",
+        "utilisateur_id": "340",
+        "type": "Cyclisme",
+        "duree": 67,
+        "distance": 10.0,
+        "calories_brulees": 963,
+        "date": "2024-07-17T10:29:01.481140"
+    },
+    {
+        "_id": "57",
+        "utilisateur_id": "292",
+        "type": "Marche",
+        "duree": 107,
+        "distance": 13.5,
+        "calories_brulees": 379,
+        "date": "2024-03-10T21:44:08.012031"
+    },
+    {
+        "_id": "58",
+        "utilisateur_id": "89",
+        "type": "Marche",
+        "duree": 54,
+        "distance": 3.2,
+        "calories_brulees": 217,
+        "date": "2024-12-10T08:52:46.677644"
+    },
+    {
+        "_id": "59",
+        "utilisateur_id": "252",
+        "type": "Marche",
+        "duree": 31,
+        "distance": 8.3,
+        "calories_brulees": 717,
+        "date": "2024-02-28T18:12:56.082475"
+    },
+    {
+        "_id": "60",
+        "utilisateur_id": "62",
+        "type": "Natation",
+        "duree": 76,
+        "distance": 9.1,
+        "calories_brulees": 442,
+        "date": "2024-08-12T12:59:12.624733"
+    },
+    {
+        "_id": "61",
+        "utilisateur_id": "471",
+        "type": "Natation",
+        "duree": 42,
+        "distance": 15.8,
+        "calories_brulees": 104,
+        "date": "2024-09-30T08:00:29.699113"
+    },
+    {
+        "_id": "62",
+        "utilisateur_id": "477",
+        "type": "Cyclisme",
+        "duree": 81,
+        "distance": 5.4,
+        "calories_brulees": 699,
+        "date": "2024-09-03T07:56:34.323464"
+    },
+    {
+        "_id": "63",
+        "utilisateur_id": "103",
+        "type": "Natation",
+        "duree": 117,
+        "distance": 13.4,
+        "calories_brulees": 936,
+        "date": "2024-07-08T05:41:55.000615"
+    },
+    {
+        "_id": "64",
+        "utilisateur_id": "455",
+        "type": "Natation",
+        "duree": 89,
+        "distance": 4.3,
+        "calories_brulees": 685,
+        "date": "2024-08-03T07:25:01.950674"
+    },
+    {
+        "_id": "65",
+        "utilisateur_id": "420",
+        "type": "Natation",
+        "duree": 78,
+        "distance": 18.9,
+        "calories_brulees": 619,
+        "date": "2024-03-31T18:07:13.409205"
+    },
+    {
+        "_id": "66",
+        "utilisateur_id": "202",
+        "type": "Cyclisme",
+        "duree": 69,
+        "distance": 4.6,
+        "calories_brulees": 606,
+        "date": "2024-11-20T20:30:01.923047"
+    },
+    {
+        "_id": "67",
+        "utilisateur_id": "289",
+        "type": "Cyclisme",
+        "duree": 73,
+        "distance": 5.1,
+        "calories_brulees": 278,
+        "date": "2025-01-04T14:21:07.160584"
+    },
+    {
+        "_id": "68",
+        "utilisateur_id": "487",
+        "type": "Natation",
+        "duree": 114,
+        "distance": 14.7,
+        "calories_brulees": 714,
+        "date": "2024-05-04T00:58:37.442638"
+    },
+    {
+        "_id": "69",
+        "utilisateur_id": "256",
+        "type": "Marche",
+        "duree": 36,
+        "distance": 4.2,
+        "calories_brulees": 814,
+        "date": "2024-11-30T19:39:46.560719"
+    },
+    {
+        "_id": "70",
+        "utilisateur_id": "97",
+        "type": "Cyclisme",
+        "duree": 16,
+        "distance": 8.8,
+        "calories_brulees": 748,
+        "date": "2024-07-01T05:45:26.052505"
+    },
+    {
+        "_id": "71",
+        "utilisateur_id": "370",
+        "type": "Cyclisme",
+        "duree": 15,
+        "distance": 18.5,
+        "calories_brulees": 243,
+        "date": "2024-09-03T09:30:46.685569"
+    },
+    {
+        "_id": "72",
+        "utilisateur_id": "263",
+        "type": "Marche",
+        "duree": 76,
+        "distance": 3.9,
+        "calories_brulees": 638,
+        "date": "2024-11-28T23:11:37.376731"
+    },
+    {
+        "_id": "73",
+        "utilisateur_id": "273",
+        "type": "Marche",
+        "duree": 67,
+        "distance": 4.4,
+        "calories_brulees": 402,
+        "date": "2024-08-13T21:54:34.854677"
+    },
+    {
+        "_id": "74",
+        "utilisateur_id": "45",
+        "type": "Natation",
+        "duree": 96,
+        "distance": 1.1,
+        "calories_brulees": 962,
+        "date": "2024-09-22T10:56:14.131166"
+    },
+    {
+        "_id": "75",
+        "utilisateur_id": "153",
+        "type": "Marche",
+        "duree": 105,
+        "distance": 6.6,
+        "calories_brulees": 552,
+        "date": "2024-04-07T00:29:08.837732"
+    },
+    {
+        "_id": "76",
+        "utilisateur_id": "172",
+        "type": "Natation",
+        "duree": 63,
+        "distance": 19.1,
+        "calories_brulees": 502,
+        "date": "2024-12-07T11:28:02.513596"
+    },
+    {
+        "_id": "77",
+        "utilisateur_id": "20",
+        "type": "Course",
+        "duree": 31,
+        "distance": 15.4,
+        "calories_brulees": 157,
+        "date": "2024-05-12T23:49:25.106864"
+    },
+    {
+        "_id": "78",
+        "utilisateur_id": "443",
+        "type": "Cyclisme",
+        "duree": 81,
+        "distance": 3.8,
+        "calories_brulees": 218,
+        "date": "2024-10-13T08:13:44.625685"
+    },
+    {
+        "_id": "79",
+        "utilisateur_id": "241",
+        "type": "Cyclisme",
+        "duree": 27,
+        "distance": 2.0,
+        "calories_brulees": 450,
+        "date": "2024-09-14T11:42:23.411488"
+    },
+    {
+        "_id": "80",
+        "utilisateur_id": "211",
+        "type": "Natation",
+        "duree": 40,
+        "distance": 10.4,
+        "calories_brulees": 986,
+        "date": "2024-03-11T17:42:34.338547"
+    },
+    {
+        "_id": "81",
+        "utilisateur_id": "102",
+        "type": "Cyclisme",
+        "duree": 27,
+        "distance": 2.5,
+        "calories_brulees": 957,
+        "date": "2024-11-02T17:20:44.637249"
+    },
+    {
+        "_id": "82",
+        "utilisateur_id": "158",
+        "type": "Natation",
+        "duree": 38,
+        "distance": 16.9,
+        "calories_brulees": 674,
+        "date": "2024-02-20T02:15:36.328157"
+    },
+    {
+        "_id": "83",
+        "utilisateur_id": "307",
+        "type": "Cyclisme",
+        "duree": 48,
+        "distance": 18.5,
+        "calories_brulees": 406,
+        "date": "2024-02-14T23:13:07.479958"
+    },
+    {
+        "_id": "84",
+        "utilisateur_id": "485",
+        "type": "Course",
+        "duree": 104,
+        "distance": 9.4,
+        "calories_brulees": 581,
+        "date": "2024-01-11T09:41:13.178477"
+    },
+    {
+        "_id": "85",
+        "utilisateur_id": "215",
+        "type": "Marche",
+        "duree": 52,
+        "distance": 17.0,
+        "calories_brulees": 559,
+        "date": "2024-07-17T05:52:35.843084"
+    },
+    {
+        "_id": "86",
+        "utilisateur_id": "495",
+        "type": "Cyclisme",
+        "duree": 73,
+        "distance": 11.2,
+        "calories_brulees": 127,
+        "date": "2024-05-29T10:32:21.131038"
+    },
+    {
+        "_id": "87",
+        "utilisateur_id": "254",
+        "type": "Cyclisme",
+        "duree": 85,
+        "distance": 11.6,
+        "calories_brulees": 205,
+        "date": "2024-02-21T19:03:45.393473"
+    },
+    {
+        "_id": "88",
+        "utilisateur_id": "220",
+        "type": "Cyclisme",
+        "duree": 25,
+        "distance": 12.7,
+        "calories_brulees": 956,
+        "date": "2024-05-30T04:48:01.125239"
+    },
+    {
+        "_id": "89",
+        "utilisateur_id": "410",
+        "type": "Course",
+        "duree": 110,
+        "distance": 6.3,
+        "calories_brulees": 108,
+        "date": "2024-06-03T22:08:32.832915"
+    },
+    {
+        "_id": "90",
+        "utilisateur_id": "167",
+        "type": "Cyclisme",
+        "duree": 91,
+        "distance": 7.4,
+        "calories_brulees": 650,
+        "date": "2024-11-06T03:42:50.204269"
+    },
+    {
+        "_id": "91",
+        "utilisateur_id": "239",
+        "type": "Course",
+        "duree": 76,
+        "distance": 5.0,
+        "calories_brulees": 235,
+        "date": "2024-12-07T16:30:56.233100"
+    },
+    {
+        "_id": "92",
+        "utilisateur_id": "377",
+        "type": "Course",
+        "duree": 37,
+        "distance": 19.6,
+        "calories_brulees": 836,
+        "date": "2024-09-13T05:28:37.370080"
+    },
+    {
+        "_id": "93",
+        "utilisateur_id": "107",
+        "type": "Cyclisme",
+        "duree": 83,
+        "distance": 11.0,
+        "calories_brulees": 799,
+        "date": "2024-08-29T21:43:19.186641"
+    },
+    {
+        "_id": "94",
+        "utilisateur_id": "443",
+        "type": "Cyclisme",
+        "duree": 107,
+        "distance": 11.2,
+        "calories_brulees": 111,
+        "date": "2024-04-20T01:33:03.577833"
+    },
+    {
+        "_id": "95",
+        "utilisateur_id": "299",
+        "type": "Natation",
+        "duree": 32,
+        "distance": 11.8,
+        "calories_brulees": 571,
+        "date": "2024-01-21T03:01:10.449041"
+    },
+    {
+        "_id": "96",
+        "utilisateur_id": "97",
+        "type": "Cyclisme",
+        "duree": 28,
+        "distance": 7.9,
+        "calories_brulees": 288,
+        "date": "2024-08-16T17:43:16.529312"
+    },
+    {
+        "_id": "97",
+        "utilisateur_id": "72",
+        "type": "Natation",
+        "duree": 29,
+        "distance": 2.6,
+        "calories_brulees": 972,
+        "date": "2024-03-09T18:36:34.466643"
+    },
+    {
+        "_id": "98",
+        "utilisateur_id": "451",
+        "type": "Cyclisme",
+        "duree": 79,
+        "distance": 4.1,
+        "calories_brulees": 433,
+        "date": "2024-05-13T13:47:16.048003"
+    },
+    {
+        "_id": "99",
+        "utilisateur_id": "336",
+        "type": "Natation",
+        "duree": 71,
+        "distance": 15.7,
+        "calories_brulees": 818,
+        "date": "2024-12-13T17:49:30.485755"
+    },
+    {
+        "_id": "100",
+        "utilisateur_id": "412",
+        "type": "Marche",
+        "duree": 32,
+        "distance": 5.5,
+        "calories_brulees": 173,
+        "date": "2024-10-11T19:28:26.964002"
+    },
+    {
+        "_id": "101",
+        "utilisateur_id": "448",
+        "type": "Course",
+        "duree": 101,
+        "distance": 18.8,
+        "calories_brulees": 605,
+        "date": "2024-08-14T21:27:48.202715"
+    },
+    {
+        "_id": "102",
+        "utilisateur_id": "112",
+        "type": "Course",
+        "duree": 111,
+        "distance": 9.0,
+        "calories_brulees": 775,
+        "date": "2024-10-04T04:29:59.031315"
+    },
+    {
+        "_id": "103",
+        "utilisateur_id": "171",
+        "type": "Marche",
+        "duree": 97,
+        "distance": 15.1,
+        "calories_brulees": 711,
+        "date": "2024-05-08T05:16:46.166512"
+    },
+    {
+        "_id": "104",
+        "utilisateur_id": "222",
+        "type": "Marche",
+        "duree": 116,
+        "distance": 4.8,
+        "calories_brulees": 617,
+        "date": "2024-06-05T02:24:18.830707"
+    },
+    {
+        "_id": "105",
+        "utilisateur_id": "222",
+        "type": "Course",
+        "duree": 16,
+        "distance": 5.2,
+        "calories_brulees": 390,
+        "date": "2024-12-13T16:27:23.316957"
+    },
+    {
+        "_id": "106",
+        "utilisateur_id": "190",
+        "type": "Marche",
+        "duree": 112,
+        "distance": 1.8,
+        "calories_brulees": 650,
+        "date": "2024-06-01T23:54:01.747201"
+    },
+    {
+        "_id": "107",
+        "utilisateur_id": "134",
+        "type": "Natation",
+        "duree": 41,
+        "distance": 17.7,
+        "calories_brulees": 745,
+        "date": "2024-09-18T12:59:41.026710"
+    },
+    {
+        "_id": "108",
+        "utilisateur_id": "241",
+        "type": "Natation",
+        "duree": 120,
+        "distance": 6.3,
+        "calories_brulees": 163,
+        "date": "2024-04-20T20:24:44.273642"
+    },
+    {
+        "_id": "109",
+        "utilisateur_id": "237",
+        "type": "Natation",
+        "duree": 103,
+        "distance": 6.7,
+        "calories_brulees": 534,
+        "date": "2024-07-24T20:55:20.240196"
+    },
+    {
+        "_id": "110",
+        "utilisateur_id": "273",
+        "type": "Natation",
+        "duree": 66,
+        "distance": 18.6,
+        "calories_brulees": 363,
+        "date": "2024-02-05T07:14:24.258142"
+    },
+    {
+        "_id": "111",
+        "utilisateur_id": "161",
+        "type": "Course",
+        "duree": 79,
+        "distance": 2.9,
+        "calories_brulees": 688,
+        "date": "2024-08-16T13:40:34.807396"
+    },
+    {
+        "_id": "112",
+        "utilisateur_id": "286",
+        "type": "Course",
+        "duree": 45,
+        "distance": 16.1,
+        "calories_brulees": 169,
+        "date": "2024-03-22T05:11:49.407087"
+    },
+    {
+        "_id": "113",
+        "utilisateur_id": "8",
+        "type": "Course",
+        "duree": 112,
+        "distance": 8.2,
+        "calories_brulees": 172,
+        "date": "2024-05-19T05:19:25.513451"
+    },
+    {
+        "_id": "114",
+        "utilisateur_id": "213",
+        "type": "Cyclisme",
+        "duree": 21,
+        "distance": 4.6,
+        "calories_brulees": 900,
+        "date": "2024-06-30T19:58:53.947285"
+    },
+    {
+        "_id": "115",
+        "utilisateur_id": "380",
+        "type": "Natation",
+        "duree": 94,
+        "distance": 7.2,
+        "calories_brulees": 106,
+        "date": "2024-10-11T09:10:42.439851"
+    },
+    {
+        "_id": "116",
+        "utilisateur_id": "245",
+        "type": "Natation",
+        "duree": 61,
+        "distance": 5.4,
+        "calories_brulees": 284,
+        "date": "2024-09-27T06:36:17.273417"
+    },
+    {
+        "_id": "117",
+        "utilisateur_id": "17",
+        "type": "Marche",
+        "duree": 28,
+        "distance": 2.2,
+        "calories_brulees": 645,
+        "date": "2024-09-13T04:13:05.837730"
+    },
+    {
+        "_id": "118",
+        "utilisateur_id": "99",
+        "type": "Natation",
+        "duree": 59,
+        "distance": 15.1,
+        "calories_brulees": 247,
+        "date": "2024-07-29T23:26:54.532822"
+    },
+    {
+        "_id": "119",
+        "utilisateur_id": "333",
+        "type": "Course",
+        "duree": 69,
+        "distance": 15.3,
+        "calories_brulees": 670,
+        "date": "2024-09-24T04:24:29.419721"
+    },
+    {
+        "_id": "120",
+        "utilisateur_id": "94",
+        "type": "Natation",
+        "duree": 83,
+        "distance": 11.2,
+        "calories_brulees": 539,
+        "date": "2024-06-29T23:08:50.008795"
+    },
+    {
+        "_id": "121",
+        "utilisateur_id": "36",
+        "type": "Cyclisme",
+        "duree": 63,
+        "distance": 12.7,
+        "calories_brulees": 375,
+        "date": "2024-11-16T07:12:16.638443"
+    },
+    {
+        "_id": "122",
+        "utilisateur_id": "424",
+        "type": "Marche",
+        "duree": 30,
+        "distance": 3.1,
+        "calories_brulees": 767,
+        "date": "2024-09-05T09:54:21.298640"
+    },
+    {
+        "_id": "123",
+        "utilisateur_id": "138",
+        "type": "Natation",
+        "duree": 93,
+        "distance": 13.5,
+        "calories_brulees": 814,
+        "date": "2024-06-19T04:45:28.734887"
+    },
+    {
+        "_id": "124",
+        "utilisateur_id": "269",
+        "type": "Course",
+        "duree": 113,
+        "distance": 13.6,
+        "calories_brulees": 189,
+        "date": "2024-05-31T14:33:24.721581"
+    },
+    {
+        "_id": "125",
+        "utilisateur_id": "497",
+        "type": "Natation",
+        "duree": 22,
+        "distance": 18.8,
+        "calories_brulees": 621,
+        "date": "2024-07-25T07:57:59.381360"
+    },
+    {
+        "_id": "126",
+        "utilisateur_id": "52",
+        "type": "Natation",
+        "duree": 73,
+        "distance": 9.8,
+        "calories_brulees": 676,
+        "date": "2024-11-15T19:36:02.524877"
+    },
+    {
+        "_id": "127",
+        "utilisateur_id": "496",
+        "type": "Course",
+        "duree": 54,
+        "distance": 8.0,
+        "calories_brulees": 117,
+        "date": "2024-11-21T18:55:45.813390"
+    },
+    {
+        "_id": "128",
+        "utilisateur_id": "324",
+        "type": "Cyclisme",
+        "duree": 111,
+        "distance": 12.3,
+        "calories_brulees": 301,
+        "date": "2024-01-16T04:06:47.128041"
+    },
+    {
+        "_id": "129",
+        "utilisateur_id": "323",
+        "type": "Cyclisme",
+        "duree": 89,
+        "distance": 18.3,
+        "calories_brulees": 848,
+        "date": "2024-11-01T04:08:57.076874"
+    },
+    {
+        "_id": "130",
+        "utilisateur_id": "95",
+        "type": "Marche",
+        "duree": 87,
+        "distance": 4.8,
+        "calories_brulees": 262,
+        "date": "2024-12-04T06:01:27.852694"
+    },
+    {
+        "_id": "131",
+        "utilisateur_id": "134",
+        "type": "Marche",
+        "duree": 71,
+        "distance": 8.5,
+        "calories_brulees": 112,
+        "date": "2024-12-16T21:06:52.184888"
+    },
+    {
+        "_id": "132",
+        "utilisateur_id": "88",
+        "type": "Natation",
+        "duree": 119,
+        "distance": 18.9,
+        "calories_brulees": 377,
+        "date": "2024-02-19T05:17:17.846272"
+    },
+    {
+        "_id": "133",
+        "utilisateur_id": "2",
+        "type": "Cyclisme",
+        "duree": 104,
+        "distance": 11.4,
+        "calories_brulees": 124,
+        "date": "2024-10-12T00:40:00.249180"
+    },
+    {
+        "_id": "134",
+        "utilisateur_id": "451",
+        "type": "Course",
+        "duree": 114,
+        "distance": 10.7,
+        "calories_brulees": 163,
+        "date": "2024-08-12T10:11:30.939403"
+    },
+    {
+        "_id": "135",
+        "utilisateur_id": "220",
+        "type": "Cyclisme",
+        "duree": 50,
+        "distance": 1.3,
+        "calories_brulees": 847,
+        "date": "2024-10-27T20:39:38.996644"
+    },
+    {
+        "_id": "136",
+        "utilisateur_id": "233",
+        "type": "Course",
+        "duree": 40,
+        "distance": 9.9,
+        "calories_brulees": 947,
+        "date": "2024-09-11T01:09:56.777911"
+    },
+    {
+        "_id": "137",
+        "utilisateur_id": "369",
+        "type": "Course",
+        "duree": 45,
+        "distance": 8.4,
+        "calories_brulees": 475,
+        "date": "2024-03-22T16:50:37.324942"
+    },
+    {
+        "_id": "138",
+        "utilisateur_id": "176",
+        "type": "Cyclisme",
+        "duree": 106,
+        "distance": 16.4,
+        "calories_brulees": 159,
+        "date": "2024-03-27T09:56:52.307182"
+    },
+    {
+        "_id": "139",
+        "utilisateur_id": "177",
+        "type": "Cyclisme",
+        "duree": 15,
+        "distance": 6.5,
+        "calories_brulees": 622,
+        "date": "2024-09-13T06:33:55.050359"
+    },
+    {
+        "_id": "140",
+        "utilisateur_id": "499",
+        "type": "Natation",
+        "duree": 113,
+        "distance": 3.2,
+        "calories_brulees": 733,
+        "date": "2024-04-15T19:40:56.753404"
+    },
+    {
+        "_id": "141",
+        "utilisateur_id": "368",
+        "type": "Marche",
+        "duree": 101,
+        "distance": 18.2,
+        "calories_brulees": 488,
+        "date": "2024-06-16T12:27:52.165883"
+    },
+    {
+        "_id": "142",
+        "utilisateur_id": "221",
+        "type": "Natation",
+        "duree": 116,
+        "distance": 12.0,
+        "calories_brulees": 179,
+        "date": "2024-10-14T08:34:16.376893"
+    },
+    {
+        "_id": "143",
+        "utilisateur_id": "390",
+        "type": "Natation",
+        "duree": 55,
+        "distance": 6.0,
+        "calories_brulees": 509,
+        "date": "2024-06-20T05:38:21.085203"
+    },
+    {
+        "_id": "144",
+        "utilisateur_id": "345",
+        "type": "Cyclisme",
+        "duree": 101,
+        "distance": 10.9,
+        "calories_brulees": 367,
+        "date": "2024-07-12T23:23:11.054696"
+    },
+    {
+        "_id": "145",
+        "utilisateur_id": "401",
+        "type": "Cyclisme",
+        "duree": 58,
+        "distance": 17.3,
+        "calories_brulees": 367,
+        "date": "2025-01-01T10:26:49.134609"
+    },
+    {
+        "_id": "146",
+        "utilisateur_id": "347",
+        "type": "Course",
+        "duree": 117,
+        "distance": 2.6,
+        "calories_brulees": 266,
+        "date": "2024-05-08T02:22:55.188415"
+    },
+    {
+        "_id": "147",
+        "utilisateur_id": "63",
+        "type": "Course",
+        "duree": 26,
+        "distance": 2.2,
+        "calories_brulees": 680,
+        "date": "2024-10-12T05:09:21.153824"
+    },
+    {
+        "_id": "148",
+        "utilisateur_id": "287",
+        "type": "Marche",
+        "duree": 93,
+        "distance": 2.1,
+        "calories_brulees": 964,
+        "date": "2024-05-14T12:45:25.057230"
+    },
+    {
+        "_id": "149",
+        "utilisateur_id": "304",
+        "type": "Course",
+        "duree": 60,
+        "distance": 10.9,
+        "calories_brulees": 934,
+        "date": "2024-07-19T20:48:00.237327"
+    },
+    {
+        "_id": "150",
+        "utilisateur_id": "472",
+        "type": "Natation",
+        "duree": 41,
+        "distance": 8.0,
+        "calories_brulees": 943,
+        "date": "2024-12-06T10:35:34.480986"
+    },
+    {
+        "_id": "151",
+        "utilisateur_id": "392",
+        "type": "Natation",
+        "duree": 89,
+        "distance": 9.6,
+        "calories_brulees": 715,
+        "date": "2024-05-03T17:41:01.761196"
+    },
+    {
+        "_id": "152",
+        "utilisateur_id": "198",
+        "type": "Marche",
+        "duree": 103,
+        "distance": 9.7,
+        "calories_brulees": 874,
+        "date": "2024-09-01T13:11:28.787433"
+    },
+    {
+        "_id": "153",
+        "utilisateur_id": "58",
+        "type": "Marche",
+        "duree": 87,
+        "distance": 9.5,
+        "calories_brulees": 103,
+        "date": "2024-10-06T02:47:45.118859"
+    },
+    {
+        "_id": "154",
+        "utilisateur_id": "492",
+        "type": "Natation",
+        "duree": 119,
+        "distance": 11.9,
+        "calories_brulees": 341,
+        "date": "2024-09-13T09:29:30.226235"
+    },
+    {
+        "_id": "155",
+        "utilisateur_id": "227",
+        "type": "Cyclisme",
+        "duree": 93,
+        "distance": 11.5,
+        "calories_brulees": 426,
+        "date": "2024-07-02T13:24:21.494461"
+    },
+    {
+        "_id": "156",
+        "utilisateur_id": "393",
+        "type": "Marche",
+        "duree": 63,
+        "distance": 9.6,
+        "calories_brulees": 826,
+        "date": "2024-09-21T16:22:39.716588"
+    },
+    {
+        "_id": "157",
+        "utilisateur_id": "37",
+        "type": "Cyclisme",
+        "duree": 58,
+        "distance": 14.6,
+        "calories_brulees": 519,
+        "date": "2024-03-10T12:51:53.699761"
+    },
+    {
+        "_id": "158",
+        "utilisateur_id": "127",
+        "type": "Cyclisme",
+        "duree": 52,
+        "distance": 18.1,
+        "calories_brulees": 102,
+        "date": "2024-01-26T14:28:33.083401"
+    },
+    {
+        "_id": "159",
+        "utilisateur_id": "495",
+        "type": "Cyclisme",
+        "duree": 92,
+        "distance": 16.3,
+        "calories_brulees": 599,
+        "date": "2024-01-16T21:45:12.976015"
+    },
+    {
+        "_id": "160",
+        "utilisateur_id": "222",
+        "type": "Cyclisme",
+        "duree": 55,
+        "distance": 15.8,
+        "calories_brulees": 537,
+        "date": "2024-10-17T20:21:46.214967"
+    },
+    {
+        "_id": "161",
+        "utilisateur_id": "69",
+        "type": "Natation",
+        "duree": 45,
+        "distance": 2.2,
+        "calories_brulees": 598,
+        "date": "2024-10-10T07:08:40.591084"
+    },
+    {
+        "_id": "162",
+        "utilisateur_id": "237",
+        "type": "Cyclisme",
+        "duree": 40,
+        "distance": 14.8,
+        "calories_brulees": 594,
+        "date": "2024-05-30T02:27:31.603012"
+    },
+    {
+        "_id": "163",
+        "utilisateur_id": "59",
+        "type": "Natation",
+        "duree": 93,
+        "distance": 16.7,
+        "calories_brulees": 557,
+        "date": "2024-11-08T23:24:12.902472"
+    },
+    {
+        "_id": "164",
+        "utilisateur_id": "320",
+        "type": "Natation",
+        "duree": 22,
+        "distance": 3.1,
+        "calories_brulees": 499,
+        "date": "2024-10-22T06:06:30.422317"
+    },
+    {
+        "_id": "165",
+        "utilisateur_id": "479",
+        "type": "Course",
+        "duree": 16,
+        "distance": 18.8,
+        "calories_brulees": 581,
+        "date": "2024-12-18T11:32:17.626579"
+    },
+    {
+        "_id": "166",
+        "utilisateur_id": "282",
+        "type": "Course",
+        "duree": 63,
+        "distance": 6.6,
+        "calories_brulees": 447,
+        "date": "2024-09-14T14:18:16.269960"
+    },
+    {
+        "_id": "167",
+        "utilisateur_id": "310",
+        "type": "Cyclisme",
+        "duree": 113,
+        "distance": 12.0,
+        "calories_brulees": 704,
+        "date": "2024-09-16T17:32:28.317684"
+    },
+    {
+        "_id": "168",
+        "utilisateur_id": "136",
+        "type": "Cyclisme",
+        "duree": 95,
+        "distance": 6.9,
+        "calories_brulees": 111,
+        "date": "2024-04-19T21:26:35.127372"
+    },
+    {
+        "_id": "169",
+        "utilisateur_id": "380",
+        "type": "Course",
+        "duree": 103,
+        "distance": 7.9,
+        "calories_brulees": 347,
+        "date": "2024-06-10T01:52:46.156499"
+    },
+    {
+        "_id": "170",
+        "utilisateur_id": "332",
+        "type": "Course",
+        "duree": 57,
+        "distance": 5.9,
+        "calories_brulees": 172,
+        "date": "2024-06-27T04:47:23.592287"
+    },
+    {
+        "_id": "171",
+        "utilisateur_id": "266",
+        "type": "Natation",
+        "duree": 29,
+        "distance": 10.5,
+        "calories_brulees": 816,
+        "date": "2024-11-06T08:56:57.541278"
+    },
+    {
+        "_id": "172",
+        "utilisateur_id": "455",
+        "type": "Natation",
+        "duree": 94,
+        "distance": 16.1,
+        "calories_brulees": 633,
+        "date": "2024-05-25T10:49:29.750902"
+    },
+    {
+        "_id": "173",
+        "utilisateur_id": "58",
+        "type": "Cyclisme",
+        "duree": 44,
+        "distance": 10.8,
+        "calories_brulees": 730,
+        "date": "2024-08-29T08:06:12.177703"
+    },
+    {
+        "_id": "174",
+        "utilisateur_id": "214",
+        "type": "Marche",
+        "duree": 81,
+        "distance": 4.7,
+        "calories_brulees": 507,
+        "date": "2024-10-11T19:18:36.534704"
+    },
+    {
+        "_id": "175",
+        "utilisateur_id": "236",
+        "type": "Natation",
+        "duree": 100,
+        "distance": 17.7,
+        "calories_brulees": 695,
+        "date": "2024-02-02T07:03:06.647222"
+    },
+    {
+        "_id": "176",
+        "utilisateur_id": "210",
+        "type": "Natation",
+        "duree": 63,
+        "distance": 5.7,
+        "calories_brulees": 385,
+        "date": "2024-12-22T12:30:10.645039"
+    },
+    {
+        "_id": "177",
+        "utilisateur_id": "340",
+        "type": "Marche",
+        "duree": 60,
+        "distance": 12.9,
+        "calories_brulees": 766,
+        "date": "2024-08-01T17:12:58.533808"
+    },
+    {
+        "_id": "178",
+        "utilisateur_id": "212",
+        "type": "Cyclisme",
+        "duree": 98,
+        "distance": 2.5,
+        "calories_brulees": 360,
+        "date": "2024-09-23T03:37:44.817437"
+    },
+    {
+        "_id": "179",
+        "utilisateur_id": "495",
+        "type": "Cyclisme",
+        "duree": 90,
+        "distance": 12.2,
+        "calories_brulees": 962,
+        "date": "2024-12-28T19:40:25.968605"
+    },
+    {
+        "_id": "180",
+        "utilisateur_id": "28",
+        "type": "Marche",
+        "duree": 31,
+        "distance": 1.1,
+        "calories_brulees": 924,
+        "date": "2024-07-17T21:35:47.693527"
+    },
+    {
+        "_id": "181",
+        "utilisateur_id": "295",
+        "type": "Marche",
+        "duree": 91,
+        "distance": 12.1,
+        "calories_brulees": 427,
+        "date": "2024-07-15T17:44:41.866421"
+    },
+    {
+        "_id": "182",
+        "utilisateur_id": "457",
+        "type": "Marche",
+        "duree": 54,
+        "distance": 11.6,
+        "calories_brulees": 979,
+        "date": "2024-09-24T23:43:21.544838"
+    },
+    {
+        "_id": "183",
+        "utilisateur_id": "485",
+        "type": "Natation",
+        "duree": 18,
+        "distance": 18.1,
+        "calories_brulees": 563,
+        "date": "2024-12-25T17:01:13.114826"
+    },
+    {
+        "_id": "184",
+        "utilisateur_id": "457",
+        "type": "Course",
+        "duree": 64,
+        "distance": 16.1,
+        "calories_brulees": 289,
+        "date": "2024-06-15T00:48:45.789433"
+    },
+    {
+        "_id": "185",
+        "utilisateur_id": "82",
+        "type": "Course",
+        "duree": 62,
+        "distance": 5.4,
+        "calories_brulees": 138,
+        "date": "2024-12-26T08:51:43.001626"
+    },
+    {
+        "_id": "186",
+        "utilisateur_id": "86",
+        "type": "Course",
+        "duree": 100,
+        "distance": 3.2,
+        "calories_brulees": 977,
+        "date": "2024-05-14T06:23:38.402077"
+    },
+    {
+        "_id": "187",
+        "utilisateur_id": "113",
+        "type": "Course",
+        "duree": 97,
+        "distance": 9.8,
+        "calories_brulees": 446,
+        "date": "2024-10-09T04:43:57.856045"
+    },
+    {
+        "_id": "188",
+        "utilisateur_id": "51",
+        "type": "Natation",
+        "duree": 101,
+        "distance": 2.4,
+        "calories_brulees": 997,
+        "date": "2024-09-28T12:40:56.819810"
+    },
+    {
+        "_id": "189",
+        "utilisateur_id": "102",
+        "type": "Natation",
+        "duree": 101,
+        "distance": 7.6,
+        "calories_brulees": 925,
+        "date": "2024-09-15T23:21:15.901440"
+    },
+    {
+        "_id": "190",
+        "utilisateur_id": "83",
+        "type": "Natation",
+        "duree": 66,
+        "distance": 6.2,
+        "calories_brulees": 148,
+        "date": "2024-03-23T16:32:01.038190"
+    },
+    {
+        "_id": "191",
+        "utilisateur_id": "400",
+        "type": "Cyclisme",
+        "duree": 67,
+        "distance": 17.1,
+        "calories_brulees": 171,
+        "date": "2024-05-11T19:07:54.644281"
+    },
+    {
+        "_id": "192",
+        "utilisateur_id": "6",
+        "type": "Cyclisme",
+        "duree": 96,
+        "distance": 3.0,
+        "calories_brulees": 373,
+        "date": "2024-08-23T02:50:53.689577"
+    },
+    {
+        "_id": "193",
+        "utilisateur_id": "404",
+        "type": "Natation",
+        "duree": 80,
+        "distance": 13.5,
+        "calories_brulees": 321,
+        "date": "2024-10-19T14:46:25.142161"
+    },
+    {
+        "_id": "194",
+        "utilisateur_id": "176",
+        "type": "Course",
+        "duree": 57,
+        "distance": 14.5,
+        "calories_brulees": 901,
+        "date": "2024-05-29T08:58:56.392190"
+    },
+    {
+        "_id": "195",
+        "utilisateur_id": "227",
+        "type": "Course",
+        "duree": 79,
+        "distance": 8.8,
+        "calories_brulees": 805,
+        "date": "2024-11-08T02:36:39.836997"
+    },
+    {
+        "_id": "196",
+        "utilisateur_id": "194",
+        "type": "Course",
+        "duree": 64,
+        "distance": 7.4,
+        "calories_brulees": 802,
+        "date": "2024-02-09T12:52:05.108431"
+    },
+    {
+        "_id": "197",
+        "utilisateur_id": "287",
+        "type": "Course",
+        "duree": 72,
+        "distance": 15.2,
+        "calories_brulees": 841,
+        "date": "2024-11-26T13:40:54.225687"
+    },
+    {
+        "_id": "198",
+        "utilisateur_id": "349",
+        "type": "Cyclisme",
+        "duree": 44,
+        "distance": 17.8,
+        "calories_brulees": 550,
+        "date": "2025-01-06T00:32:26.706366"
+    },
+    {
+        "_id": "199",
+        "utilisateur_id": "136",
+        "type": "Cyclisme",
+        "duree": 64,
+        "distance": 16.5,
+        "calories_brulees": 782,
+        "date": "2024-12-23T01:12:33.828684"
+    },
+    {
+        "_id": "200",
+        "utilisateur_id": "253",
+        "type": "Natation",
+        "duree": 78,
+        "distance": 8.7,
+        "calories_brulees": 400,
+        "date": "2024-05-24T14:17:24.184370"
+    }
+]
