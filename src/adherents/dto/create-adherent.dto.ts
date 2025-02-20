@@ -9,6 +9,7 @@ import {
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ObjectId } from 'mongodb';
+
 export enum ObjectifStatus {
   EN_COURS = 'En cours',
   ATTEINT = 'Atteint',
@@ -38,7 +39,6 @@ class ObjectifDto {
 export class CreateAdherentDto {
   @IsString()
   @IsOptional()
-
   id: string | ObjectId;
 
   @IsString()
@@ -54,7 +54,7 @@ export class CreateAdherentDto {
 
   @IsDateString()
   @IsOptional()
-  date_inscription: string 
+  date_inscription: string;
 
   @IsNumber()
   age: number;
