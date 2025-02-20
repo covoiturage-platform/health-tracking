@@ -17,7 +17,7 @@ export class CoachsController {
 
   @Get(':id')
   @ApiOperation({ summary: 'Retrieve a single coach by ID' })
-  @ApiParam({ name: 'id', description: 'ID of the coach', type: String })
+  @ApiParam({ name: 'id', description: 'ID of the coach', type: String, example: '60d0fe4f5311236168a109ca' })
   @ApiResponse({ status: 200, description: 'The found coach', type: Coach })
   @ApiResponse({ status: 404, description: 'Coach not found' })
   findOneCoach(@Param('id') id: string) {
@@ -26,7 +26,20 @@ export class CoachsController {
 
   @Post()
   @ApiOperation({ summary: 'Create a new coach' })
-  @ApiBody({ description: 'Data for the new coach', type: Coach })
+  @ApiBody({
+    description: 'Data for the new coach',
+    type: Coach,
+    examples: {
+      example1: {
+        summary: 'Example coach',
+        value: {
+          name: 'John Doe',
+          speciality: 'Fitness',
+          experience: 5,
+        },
+      },
+    },
+  })
   @ApiResponse({ status: 201, description: 'The created coach', type: Coach })
   @ApiResponse({ status: 400, description: 'Invalid input data' })
   createCoach(
@@ -38,8 +51,21 @@ export class CoachsController {
 
   @Patch(':id')
   @ApiOperation({ summary: 'Update an existing coach' })
-  @ApiParam({ name: 'id', description: 'ID of the coach to update', type: String })
-  @ApiBody({ description: 'Updated data for the coach', type: Coach })
+  @ApiParam({ name: 'id', description: 'ID of the coach to update', type: String, example: '60d0fe4f5311236168a109ca' })
+  @ApiBody({
+    description: 'Updated data for the coach',
+    type: Coach,
+    examples: {
+      example1: {
+        summary: 'Example update',
+        value: {
+          name: 'Jane Doe',
+          speciality: 'Yoga',
+          experience: 7,
+        },
+      },
+    },
+  })
   @ApiResponse({ status: 200, description: 'The updated coach', type: Coach })
   @ApiResponse({ status: 404, description: 'Coach not found' })
   @ApiResponse({ status: 400, description: 'Invalid input data' })
@@ -53,7 +79,7 @@ export class CoachsController {
 
   @Delete(':id')
   @ApiOperation({ summary: 'Delete a coach' })
-  @ApiParam({ name: 'id', description: 'ID of the coach to delete', type: String })
+  @ApiParam({ name: 'id', description: 'ID of the coach to delete', type: String, example: '60d0fe4f5311236168a109ca' })
   @ApiResponse({ status: 200, description: 'Coach deleted successfully' })
   @ApiResponse({ status: 404, description: 'Coach not found' })
   removeCoach(@Param('id') id: string) {
@@ -62,7 +88,7 @@ export class CoachsController {
 
   @Get('speciality/:specialite')
   @ApiOperation({ summary: 'Retrieve coachs by speciality' })
-  @ApiParam({ name: 'specialite', description: 'Speciality of the coach', type: String })
+  @ApiParam({ name: 'specialite', description: 'Speciality of the coach', type: String, example: 'Fitness' })
   @ApiResponse({ status: 200, description: 'List of coachs by speciality', type: [Coach] })
   findBySpeciality(@Param('specialite') specialite: string) {
     return this.coachsService.findBySpeciality(specialite);
