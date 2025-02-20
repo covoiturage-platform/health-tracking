@@ -1,39 +1,27 @@
-import {
-  BadRequestException,
-  Inject,
-  Injectable,
-  NotFoundException,
-} from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { Db, ObjectId } from 'mongodb';
+import { Inject } from '@nestjs/common';
+import { Coach } from './entities/coach.entity';
 
 @Injectable()
 export class CoachsService {
+  private coachs;
+
   constructor(
     @Inject('MONGO_DB')
     private readonly db: Db,
-  ) {}
+  ) {
+    this.coachs = this.db.collection('coachs');
+  }
 
-  coachs = this.db.collection('coachs');
-
-  findAllCoachs() {
+  async findAllCoachs(): Promise<Coach[]> {
     return this.coachs.find().toArray();
   }
 
-  async findOneCoach(id: string) {
-    if (!id) {
-      throw new BadRequestException('Coach ID is required');
-    }
-
-    let query;
-    try {
-      query = { _id: new ObjectId(id) };
-    } catch {
-      query = { _id: id };
-    }
-
-    const coach = await this.coachs.findOne(query);
+  async findOneCoach(id: string): Promise<Coach> {
+    const coach = await this.coachs.findOne({ _id: new ObjectId(id) });
     if (!coach) {
-      throw new NotFoundException(`Coach #${id} not found`);
+      throw new NotFoundException(`Coach with ID ${id} not found`);
     }
     return coach;
   }
