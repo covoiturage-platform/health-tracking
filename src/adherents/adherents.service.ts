@@ -1,34 +1,71 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { CreateAdherentDto } from './dto/create-adherent.dto';
 import { UpdateAdherentDto } from './dto/update-adherent.dto';
-import { Db } from 'mongodb';
+import { Db, ObjectId } from 'mongodb';
 
 @Injectable()
 export class AdherentsService {
-  constructor(
-    @Inject('MONGO_DB')
-    private readonly db: Db,
-  ) {}
+  private adherents;
 
-   adherents = this.db.collection('adherents');
+  constructor(@Inject('MONGO_DB') private readonly db: Db) {
+    this.adherents = this.db.collection('adherents');
+  }
 
-  findAll() {
+  // 🔹 Récupérer tous les adhérents
+  async findAll() {
     return this.adherents.find().toArray();
   }
 
-  findOne(id: number) {
-
+  // 🔹 Trouver un adhérent par ID
+  async findOne(id: string) {
+    return this.adherents.findOne({ _id: id });
   }
 
-  create(adherent: CreateAdherentDto) {
-
+  // 🔹 Trouver un adhérent par email (Ajouté)
+  async findByEmail(email: string) {
+    return this.adherents.findOne({ email });
   }
 
-  update(id: number, adherentUpdate: UpdateAdherentDto) {
-
+  // 🔹 Ajouter un adhérent (Correction)
+  async create(adherent: CreateAdherentDto) {
+    const result = await this.adherents.insertOne({ ...adherent, dateInscription: new Date() });
+    return result.insertedId;
   }
 
-  remove(id: number) {
+  // 🔹 Mettre à jour un adhérent (Correction)
+  async update(id: string, adherentUpdate: UpdateAdherentDto) {
+    return this.adherents.findOneAndUpdate(
+      { _id: id },
+      { $set: adherentUpdate },
+      { returnDocument: 'after' }
+    );
+  }
 
+  // 🔹 Mettre à jour le poids d’un adhérent (Ajouté)
+  async updatePoids(id: string, nouveauPoids: number) {
+    return this.adherents.updateOne(
+      { _id: id },
+      { $set: { poids: nouveauPoids } }
+    );
+  }
+
+  // 🔹 Supprimer un adhérent
+  async remove(id: string) {
+    return this.adherents.deleteOne({ _id: id });
+  }
+
+  // 🔹 Compter le nombre total d'adhérents (Ajouté)
+  async countAdherents() {
+    return this.adherents.countDocuments();
+  }
+
+  // 🔹 Récupérer les adhérents d’un coach (Ajouté)
+  async findByCoach(coachId: string) {
+    return this.adherents.find({ coachId: coachId }).toArray();
+  }
+
+  // 🔹 Supprimer tous les adhérents d’un coach (Ajouté)
+  async deleteByCoach(coachId: string) {
+    return this.adherents.deleteMany({ coachId: coachId });
   }
 }

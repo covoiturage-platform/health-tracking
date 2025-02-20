@@ -26,6 +26,22 @@ export class ActivitesController {
     return this.activitesService.findOne(id);
   }
 
+  @Get('coach/:coachId')
+  @ApiOperation({ summary: 'Retrieve activites by coach ID' })
+  @ApiParam({ name: 'coachId', description: 'ID of the coach', type: String })
+  @ApiResponse({ status: 200, description: 'List of activites by coach', type: [Activite] })
+  findByCoach(@Param('coachId') coachId: string) {
+    return this.activitesService.findByCoach(coachId);
+  }
+
+  @Get('type/:type')
+  @ApiOperation({ summary: 'Retrieve activites by type' })
+  @ApiParam({ name: 'type', description: 'Type of the activite', type: String })
+  @ApiResponse({ status: 200, description: 'List of activites by type', type: [Activite] })
+  findByType(@Param('type') type: string) {
+    return this.activitesService.findByType(type);
+  }
+
   @Post()
   @ApiOperation({ summary: 'Create a new activite' })
   @ApiBody({ description: 'Data for the new activite', type: CreateActiviteDto })
@@ -60,5 +76,20 @@ export class ActivitesController {
   @ApiResponse({ status: 404, description: 'Activite not found' })
   remove(@Param('id') id: string) {
     return this.activitesService.remove(id);
+  }
+
+  @Delete('coach/:coachId')
+  @ApiOperation({ summary: 'Delete all activites by coach ID' })
+  @ApiParam({ name: 'coachId', description: 'ID of the coach', type: String })
+  @ApiResponse({ status: 200, description: 'All activites by coach deleted successfully' })
+  deleteByCoach(@Param('coachId') coachId: string) {
+    return this.activitesService.deleteByCoach(coachId);
+  }
+
+  @Get('count')
+  @ApiOperation({ summary: 'Count total number of activites' })
+  @ApiResponse({ status: 200, description: 'Total number of activites' })
+  countActivites() {
+    return this.activitesService.countActivites();
   }
 }
