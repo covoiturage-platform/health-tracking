@@ -7,35 +7,46 @@ import { Db, ObjectId } from 'mongodb';
 export class ActivitesService {
   private activites;
 
-  constructor(
-    @Inject('MONGO_DB')
-    private readonly db: Db,
-  ) {
+  constructor(@Inject('MONGO_DB') private readonly db: Db) {
     this.activites = this.db.collection('activites');
   }
 
+  // 🔹 Récupérer toutes les activités
   async findAll() {
     return this.activites.find().toArray();
   }
 
+  // 🔹 Trouver une activité par ID
   async findOne(id: string) {
-    const activite = await this.activites.findOne({ _id: new ObjectId(id) });
+    const activite = await this.activites.findOne({ _id: id });
     if (!activite) {
       throw new NotFoundException(`Activite with ID ${id} not found`);
     }
     return activite;
   }
 
-  async create(createActiviteDto: CreateActiviteDto) {
-    const result = await this.activites.insertOne(createActiviteDto);
-    return result.ops[0];
+  // 🔹 Trouver les activités d’un coach (Ajouté)
+  async findByCoach(coachId: string) {
+    return this.activites.find({ coachId: coachId }).toArray();
   }
 
+  // 🔹 Trouver les activités par type (Ajouté)
+  async findByType(type: string) {
+    return this.activites.find({ type }).toArray();
+  }
+
+  // 🔹 Ajouter une activité (Correction)
+  async create(createActiviteDto: CreateActiviteDto) {
+    const result = await this.activites.insertOne({ ...createActiviteDto, dateCreation: new Date() });
+    return result.insertedId;
+  }
+
+  // 🔹 Mettre à jour une activité (Correction)
   async update(id: string, updateActiviteDto: UpdateActiviteDto) {
     const result = await this.activites.findOneAndUpdate(
-      { _id: new ObjectId(id) },
+      { _id: id },
       { $set: updateActiviteDto },
-      { returnOriginal: false },
+      { returnDocument: 'after' }
     );
     if (!result.value) {
       throw new NotFoundException(`Activite with ID ${id} not found`);
@@ -43,10 +54,21 @@ export class ActivitesService {
     return result.value;
   }
 
+  // 🔹 Supprimer une activité
   async remove(id: string) {
-    const result = await this.activites.deleteOne({ _id: new ObjectId(id) });
+    const result = await this.activites.deleteOne({ _id: id });
     if (result.deletedCount === 0) {
       throw new NotFoundException(`Activite with ID ${id} not found`);
     }
+  }
+
+  // 🔹 Compter le nombre total d’activités (Ajouté)
+  async countActivites() {
+    return this.activites.countDocuments();
+  }
+
+  // 🔹 Supprimer toutes les activités d’un coach (Ajouté)
+  async deleteByCoach(coachId: string) {
+    return this.activites.deleteMany({ coachId: coachId });
   }
 }

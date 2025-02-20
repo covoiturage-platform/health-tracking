@@ -61,4 +61,31 @@ export class PlansNutritionController {
   remove(@Param('id') id: string) {
     return this.plansNutritionService.remove(id);
   }
+
+  @Get('adherent/:adherentId')
+  @ApiOperation({ summary: 'Retrieve plans nutrition by adherent ID' })
+  @ApiParam({ name: 'adherentId', description: 'ID of the adherent', type: String })
+  @ApiResponse({ status: 200, description: 'List of plans nutrition by adherent', type: [PlanNutrition] })
+  findByAdherent(@Param('adherentId') adherentId: string) {
+    return this.plansNutritionService.findByAdherent(adherentId);
+  }
+
+  @Get('count')
+  @ApiOperation({ summary: 'Count total number of plans nutrition' })
+  @ApiResponse({ status: 200, description: 'Total number of plans nutrition' })
+  countPlans() {
+    return this.plansNutritionService.countPlans();
+  }
+
+  @Get('date-range')
+  @ApiOperation({ summary: 'Retrieve plans nutrition by date range' })
+  @ApiParam({ name: 'startDate', description: 'Start date', type: String })
+  @ApiParam({ name: 'endDate', description: 'End date', type: String })
+  @ApiResponse({ status: 200, description: 'List of plans nutrition by date range', type: [PlanNutrition] })
+  findByDateRange(
+    @Param('startDate') startDate: string,
+    @Param('endDate') endDate: string,
+  ) {
+    return this.plansNutritionService.findByDateRange(new Date(startDate), new Date(endDate));
+  }
 }

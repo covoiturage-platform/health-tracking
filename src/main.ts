@@ -13,10 +13,24 @@ async function bootstrap() {
   app.enableVersioning({ type: VersioningType.URI });
 
   const config = new DocumentBuilder()
-    .setTitle('Health tracking API')
-    .setDescription('The health tracking API description')
+    .setTitle('Health Tracking API')
+    .setDescription('API for tracking health-related activities, nutrition plans, and more.')
     .setVersion('1.0')
     .addTag('health')
+    .addTag('adherents', 'Operations related to adherents')
+    .addTag('coachs', 'Operations related to coachs')
+    .addTag('activites', 'Operations related to activities')
+    .addTag('plans-nutrition', 'Operations related to nutrition plans')
+    .setContact(
+      'API Support',
+      'http://example.com',
+      'support@example.com'
+    )
+    .setLicense(
+      'MIT',
+      'https://opensource.org/licenses/MIT'
+    )
+    .addBearerAuth()
     .build();
   
   const document = SwaggerModule.createDocument(app, config);
