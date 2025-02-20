@@ -16,7 +16,6 @@ async function bootstrap() {
     .setTitle('Health Tracking API')
     .setDescription('API for tracking health-related activities, nutrition plans, and more.')
     .setVersion('1.0')
-    .addTag('health')
     .addTag('adherents', 'Operations related to adherents')
     .addTag('coachs', 'Operations related to coachs')
     .addTag('activites', 'Operations related to activities')
@@ -30,11 +29,19 @@ async function bootstrap() {
       'MIT',
       'https://opensource.org/licenses/MIT'
     )
-    .addBearerAuth()
+    .addBearerAuth(
+      { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' },
+      'access-token',
+    )
     .build();
   
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('swagger', app, document);
+  SwaggerModule.setup('swagger', app, document, {
+    swaggerOptions: {
+      persistAuthorization: true,
+    },
+    customSiteTitle: 'Health Tracking API Docs',
+  });
 
   setupRedoc(app);
 

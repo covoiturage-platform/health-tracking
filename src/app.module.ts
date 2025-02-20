@@ -5,6 +5,8 @@ import { CoachsModule } from './coachs/coachs.module';
 import { ActivitesModule } from './activites/activites.module';
 import { ConfigModule } from '@nestjs/config';
 import { PlansNutritionModule } from './plans_nutrition/plans_nutrition.module';
+import { UsersModule } from './users/users.module';
+import { MongoUsersModule } from './mongo-users/mongo-users.module';
 
 @Module({
   imports: [
@@ -13,7 +15,9 @@ import { PlansNutritionModule } from './plans_nutrition/plans_nutrition.module';
     MongodbModule,
     CoachsModule,
     ActivitesModule,
-    PlansNutritionModule
+    PlansNutritionModule,
+    UsersModule,
+    MongoUsersModule
   ]
 })
 export class AppModule {}
