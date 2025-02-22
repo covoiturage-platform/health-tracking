@@ -33,9 +33,14 @@ export class CoachsController {
       example1: {
         summary: 'Example coach',
         value: {
-          name: 'John Doe',
-          speciality: 'Fitness',
-          experience: 5,
+          nom: 'Anne Burns',
+          telephone: '801.857.2302',
+          specialite: 'Zumba',
+          email: 'anne.burns@coachingpro.com',
+          adherents: [
+            '24', '69', '83', '92', '102', '105', '108', '112', '118', '133', '144', '149', '229', '253', '260', '287', '316', '382', '387', '390', '399', '401', '439', '462', '496'
+          ],
+          date_recrutement: '2018-02-26',
         },
       },
     },
@@ -59,9 +64,14 @@ export class CoachsController {
       example1: {
         summary: 'Example update',
         value: {
-          name: 'Jane Doe',
-          speciality: 'Yoga',
-          experience: 7,
+          nom: 'Anne Burns',
+          telephone: '801.857.2302',
+          specialite: 'Zumba',
+          email: 'anne.burns@coachingpro.com',
+          adherents: [
+            '24', '69', '83', '92', '102', '105', '108', '112', '118', '133', '144', '149', '229', '253', '260', '287', '316', '382', '387', '390', '399', '401', '439', '462', '496'
+          ],
+          date_recrutement: '2018-02-26',
         },
       },
     },
