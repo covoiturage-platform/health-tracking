@@ -42,10 +42,10 @@ export class AdherentsService {
   }
 
   // 🔹 Mettre à jour le poids d’un adhérent (Ajouté)
-  async updatePoids(id: string, nouveauPoids: number) {
+  async updateWeightByEmail(email: string, nouveauPoids: number) {
     return this.adherents.updateOne(
-      { _id: id },
-      { $set: { poids: nouveauPoids } }
+      { email: email },
+      { $set: { poids_actuel: nouveauPoids } }
     );
   }
 
@@ -55,7 +55,7 @@ export class AdherentsService {
   }
 
   // 🔹 Compter le nombre total d'adhérents (Ajouté)
-  async countAdherents() {
+  async countAdherents(): Promise<number> {
     return this.adherents.countDocuments();
   }
 
