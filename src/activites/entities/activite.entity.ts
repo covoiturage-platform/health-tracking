@@ -2,17 +2,23 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class Activite {
   @ApiProperty({ description: 'The ID of the activite' })
-  id: string;
+  _id: string;
 
-  @ApiProperty({ description: 'The name of the activite' })
-  name: string;
+  @ApiProperty({ description: 'The ID of the user' })
+  utilisateur_id: string;
 
-  @ApiProperty({ description: 'The description of the activite' })
-  description: string;
+  @ApiProperty({ description: 'The type of the activite' })
+  type: string;
 
   @ApiProperty({ description: 'The duration of the activite in minutes' })
-  duration: number;
+  duree: number;
 
-  @ApiProperty({ description: 'The type of the activite', required: false })
-  type?: string;
+  @ApiProperty({ description: 'The distance covered during the activite in kilometers' })
+  distance: number;
+
+  @ApiProperty({ description: 'The calories burned during the activite' })
+  calories_brulees: number;
+
+  @ApiProperty({ description: 'The date of the activite' })
+  date: string;
 }

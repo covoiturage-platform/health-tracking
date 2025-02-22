@@ -1,4 +1,4 @@
-import { Inject, Injectable, NotFoundException } from '@nestjs/common';
+import { Inject, Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { CreateActiviteDto } from './dto/create-activite.dto';
 import { UpdateActiviteDto } from './dto/update-activite.dto';
 import { Db, ObjectId } from 'mongodb';
@@ -27,7 +27,7 @@ export class ActivitesService {
 
   // 🔹 Trouver les activités d’un coach (Ajouté)
   async findByCoach(coachId: string) {
-    return this.activites.find({ coachId: coachId }).toArray();
+    return this.activites.find({ utilisateur_id: coachId }).toArray();
   }
 
   // 🔹 Trouver les activités par type (Ajouté)

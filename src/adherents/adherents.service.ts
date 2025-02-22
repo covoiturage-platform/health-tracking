@@ -42,10 +42,10 @@ export class AdherentsService {
   }
 
   // 🔹 Mettre à jour le poids d’un adhérent (Ajouté)
-  async updatePoids(id: string, nouveauPoids: number) {
+  async updateWeightByEmail(email: string, nouveauPoids: number) {
     return this.adherents.updateOne(
-      { _id: id },
-      { $set: { poids: nouveauPoids } }
+      { email: email },
+      { $set: { poids_actuel: nouveauPoids } }
     );
   }
 
@@ -55,17 +55,17 @@ export class AdherentsService {
   }
 
   // 🔹 Compter le nombre total d'adhérents (Ajouté)
-  async countAdherents() {
+  async countAdherents(): Promise<number> {
     return this.adherents.countDocuments();
   }
 
   // 🔹 Récupérer les adhérents d’un coach (Ajouté)
   async findByCoach(coachId: string) {
-    return this.adherents.find({ coachId: coachId }).toArray();
+    return this.adherents.find({ coach_id: coachId }).toArray();
   }
 
   // 🔹 Supprimer tous les adhérents d’un coach (Ajouté)
   async deleteByCoach(coachId: string) {
-    return this.adherents.deleteMany({ coachId: coachId });
+    return this.adherents.deleteMany({ coach_id: coachId });
   }
 }

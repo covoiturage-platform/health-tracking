@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { Db, ObjectId } from 'mongodb';
 import { Inject } from '@nestjs/common';
 import { Coach } from './entities/coach.entity';
@@ -25,13 +25,13 @@ export class CoachsService {
     return coach;
   }
 
-  // 🔹 Ajouter un coach (Ajouté)
+  // 🔹 Ajouter un coach
   async createCoach(coachData: Partial<Coach>): Promise<string> {
-    const result = await this.coachs.insertOne({ ...coachData, dateInscription: new Date() });
+    const result = await this.coachs.insertOne({ ...coachData, date_recrutement: new Date() });
     return result.insertedId.toString();
   }
 
-  // 🔹 Mettre à jour un coach (Ajouté)
+  // 🔹 Mettre à jour un coach
   async updateCoach(id: string, updateData: Partial<Coach>): Promise<Coach> {
     const result = await this.coachs.findOneAndUpdate(
       { _id: id },
@@ -44,7 +44,7 @@ export class CoachsService {
     return result.value;
   }
 
-  // 🔹 Supprimer un coach (Ajouté)
+  // 🔹 Supprimer un coach
   async removeCoach(id: string): Promise<void> {
     const result = await this.coachs.deleteOne({ _id: id });
     if (result.deletedCount === 0) {
@@ -52,12 +52,12 @@ export class CoachsService {
     }
   }
 
-  // 🔹 Trouver les coachs par spécialité (Ajouté)
+  // 🔹 Trouver les coachs par spécialité
   async findBySpeciality(specialite: string): Promise<Coach[]> {
     return this.coachs.find({ specialite }).toArray();
   }
 
-  // 🔹 Compter le nombre total de coachs (Ajouté)
+  // 🔹 Compter le nombre total de coachs
   async countCoachs(): Promise<number> {
     return this.coachs.countDocuments();
   }

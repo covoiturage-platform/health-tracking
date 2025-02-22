@@ -35,15 +35,11 @@ export class PlansNutritionController {
       example1: {
         summary: 'Example plan nutrition',
         value: {
-          name: 'Weight Loss Plan',
-          description: 'A plan designed to help you lose weight',
-          duration: 30,
-          meals: [
-            { name: 'Breakfast', items: ['Oatmeal', 'Fruit'] },
-            { name: 'Lunch', items: ['Grilled Chicken', 'Salad'] },
-            { name: 'Dinner', items: ['Fish', 'Vegetables'] },
-          ],
-          adherentId: '60d0fe4f5311236168a109cb',
+          adherent_id: '138',
+          type_regime: 'Végétarien',
+          calories_journalieres: 2662,
+          date_debut: '2024-08-26',
+          date_fin: '2025-01-07',
         },
       },
     },
@@ -67,14 +63,11 @@ export class PlansNutritionController {
       example1: {
         summary: 'Example update',
         value: {
-          name: 'Updated Weight Loss Plan',
-          description: 'An updated plan designed to help you lose weight',
-          duration: 45,
-          meals: [
-            { name: 'Breakfast', items: ['Smoothie', 'Fruit'] },
-            { name: 'Lunch', items: ['Grilled Chicken', 'Quinoa'] },
-            { name: 'Dinner', items: ['Fish', 'Vegetables'] },
-          ],
+          adherent_id: '138',
+          type_regime: 'Végétarien',
+          calories_journalieres: 2800,
+          date_debut: '2024-08-26',
+          date_fin: '2025-01-07',
         },
       },
     },

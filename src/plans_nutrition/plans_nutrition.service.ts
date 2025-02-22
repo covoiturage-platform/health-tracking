@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { Db, ObjectId } from 'mongodb';
 import { Inject } from '@nestjs/common';
 import { CreatePlanNutritionDto } from './dto/create-plan_nutrition.dto';
@@ -59,7 +59,7 @@ export class PlansNutritionService {
 
   // 🔹 Trouver les plans d'un adhérent spécifique
   async findByAdherent(adherentId: string): Promise<PlanNutrition[]> {
-    return this.plansNutrition.find({ adherentId: adherentId }).toArray();
+    return this.plansNutrition.find({ adherent_id: adherentId }).toArray();
   }
 
   // 🔹 Compter le nombre total de plans nutritionnels
@@ -70,7 +70,7 @@ export class PlansNutritionService {
   // 🔹 Filtrer les plans nutritionnels par date de création
   async findByDateRange(startDate: string, endDate: string): Promise<PlanNutrition[]> {
     return this.plansNutrition
-      .find({ dateCreation: { $gte: startDate, $lte: endDate } })
+      .find({ dateCreation: { $gte: new Date(startDate), $lte: new Date(endDate) } })
       .toArray();
   }
 }
