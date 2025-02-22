@@ -97,27 +97,27 @@ export class AdherentsController {
     return this.adherentsService.update(id, adherentUpdate);
   }
 
-  @Patch(':id/poids')
+  @Patch('email/:email/weight')
   @ApiOperation({ summary: 'Update the weight of an adherent' })
-  @ApiParam({ name: 'id', description: 'ID of the adherent to update', type: String, example: '60d0fe4f5311236168a109ca' })
+  @ApiParam({ name: 'email', description: 'Email of the adherent to update', type: String, example: 'example@gmail.com' })
   @ApiBody({
     description: 'New weight of the adherent',
     type: Number,
     examples: {
       example1: {
         summary: 'Example weight update',
-        value: 75,
+        value: { weight: 75 },
       },
     },
   })
   @ApiResponse({ status: 200, description: 'The updated adherent' })
   @ApiResponse({ status: 404, description: 'Adherent not found' })
   @ApiResponse({ status: 400, description: 'Invalid input data' })
-  updatePoids(
-    @Param('id') id: string,
-    @Body('poids', ValidationPipe) nouveauPoids: number,
+  updateWeight(
+    @Param('email') email: string,
+    @Body('weight', ValidationPipe) newWeight: number,
   ) {
-    return this.adherentsService.updatePoids(id, nouveauPoids);
+    return this.adherentsService.updateWeightByEmail(email, newWeight);
   }
 
   @Delete(':id')
@@ -129,10 +129,10 @@ export class AdherentsController {
     return this.adherentsService.remove(id);
   }
 
-  @Get('count')
+  @Get('count/all')
   @ApiOperation({ summary: 'Count total number of adherents' })
   @ApiResponse({ status: 200, description: 'Total number of adherents' })
-  countAdherents() {
+  countAdherents(): Promise<number> {
     return this.adherentsService.countAdherents();
   }
 
