@@ -1,21 +1,32 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsString, IsNumber, IsOptional } from 'class-validator';
+import { IsString, IsNumber, IsOptional, IsDateString } from 'class-validator';
 
 export class CreateActiviteDto {
-  @ApiProperty({ description: 'The name of the activite' })
+  @ApiProperty({ description: 'The ID of the activite' })
   @IsString()
-  name: string;
+  _id: string;
 
-  @ApiProperty({ description: 'The description of the activite' })
+  @ApiProperty({ description: 'The ID of the user' })
   @IsString()
-  description: string;
+  utilisateur_id: string;
+
+  @ApiProperty({ description: 'The type of the activite' })
+  @IsString()
+  type: string;
 
   @ApiProperty({ description: 'The duration of the activite in minutes' })
   @IsNumber()
-  duration: number;
+  duree: number;
 
-  @ApiProperty({ description: 'The type of the activite', required: false })
-  @IsOptional()
-  @IsString()
-  type?: string;
+  @ApiProperty({ description: 'The distance covered during the activite in kilometers' })
+  @IsNumber()
+  distance: number;
+
+  @ApiProperty({ description: 'The calories burned during the activite' })
+  @IsNumber()
+  calories_brulees: number;
+
+  @ApiProperty({ description: 'The date of the activite' })
+  @IsDateString()
+  date: string;
 }
